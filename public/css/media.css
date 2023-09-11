@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (max-width: 600px) {
+  .navbar_for_desktop {
+    display: none !important;
+  }
+  .navbar_for_mobile {
+    display: block !important;
+  }
+  .banner_area {
+    padding: 30px 0px;
+  }
+  .banner_area .lefttxt_banner {
+    text-align: center;
+  }
+  .lefttxt_banner h1 {
+    font-size: 21px;
+  }
+  .lefttxt_banner i span {
+    font-size: 15px;
+  }
+  .lefttxt_banner button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: inherit;
+  }
+  .righttxt_banner {
+    margin-left: 0 !important;
+  }
+  .righttxt_banner p {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .second_logo {
+    width: 60%;
+  }
+  .banner_area_second .righttxt_banner p {
+    font-size: 16px;
+    margin-left: 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+  }
+  .tweleve_icons .left_cion {
+    width: 12%;
+  }
+  .tweleve_icons .right_text {
+    width: 80%;
+  }
+  .tweleve_icons .icon_text {
+    margin-top: 10px;
+  }
+  .using_email {
+    padding: 50px 0px;
+  }
+  .using_email h1 {
+    font-size: 18px;
+  }
+  .using_email p {
+    font-size: 17px;
+  }
+  .closing_new {
+    padding: 50px 0px;
+  }
+  .closing_new h1 {
+    font-size: 18px;
+  }
+  .closing_new p {
+    font-size: 17px;
+  }
+  .ready_made {
+    padding: 50px 10px;
+    text-align: center;
+  }
+  .ready_made .ready_made_list {
+    padding: 0;
+  }
+  .ready_made h1 {
+    font-size: 18px;
+  }
+  .ready_made p {
+    font-size: 17px;
+  }
+  .ready_made .hospital h1 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .ready_made .hospital h1 span {
+    font-size: 18px;
+  }
+  .ready_to_bost {
+    padding: 50px 0px;
+  }
+  .ready_to_bost h1 {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .ready_to_bost .bulid_list_btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+	.modal-content {
+    position: fixed !important;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+     width: 100% !important; 
+     left: 0%; 
+    top: 7%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+	.close{
+		opacity: 1;
+		color: white;
+	}
+	.navbar_for_mobile .menu-nav .dropdown-menu{
+		    transform: translate3d(-50px, 70px, 0px);
+	}
+}

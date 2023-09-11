@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pick Your data</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/media.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="assets/script.js"> </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-4 col-4">
+                <div class="main_logo"> <a href="index.html"><img src="images/logo.png" alt=""> </a></div>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-6 col-4">
+                <nav class="navbar navbar-expand-lg navbar-light"> <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown"> <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Build A List </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="filter.html">Filters</a> <a class="dropdown-item" href="#">Build A List 2</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Build A List 3</a> </div>
+            </li>
+            <li class="nav-item dropdown"> <a class="nav-link" href="ready-made-lists.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Ready-Made Lists </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="job-levels.html">Job Levels</a> <a class="dropdown-item" href="job-titles.html">Job Titles</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Pricing 3</a> </div>
+            </li>
+            <li class="nav-item dropdown"> <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pricing </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Pricing 1</a> <a class="dropdown-item" href="#">Pricing 2</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Pricing 3</a> </div>
+            </li>
+            <li class="nav-item"> <a class="nav-link disabled" href="#">Popular</a> </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-6 col-4">
+                <div class="menu-nav">
+                    <div class="dropdown-container" tabindex="-1">
+                        <div class="nav-item dropdown"> <a class="nav-link  three-dots" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">About</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  tabs start-->
+    <div class="new_tabs">
+        <div class="new_tabs_secndpage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-6 col-6">
+                        <ul class="nav nav-tabs nav-fill" role="tablist">
+                            <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#duck" role="tab" aria-controls="duck" aria-selected="true">Business Contacts</a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#chicken" role="tab" aria-controls="chicken" aria-selected="false">Healthcare Professionals</a> </li>
+                            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#kiwi" role="tab" aria-controls="kiwi" aria-selected="false">Real Estate Agents</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-6 col-6">
+                    <h1 class="heading_filter_page">OVER 1M CONTACTS <span>Please add more filters to your search</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4 mb-5">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-6 col-6">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="duck" role="tabpanel" aria-labelledby="duck-tab">
+                            <div class="filterations_page">
+                                <div class="left_side">
+                                    <h5>CONTACT TITLE</h5>
+                                    <button id="myBtn" class="btn">Job Level<i class="fa fa-bars"></i> </button><br>
+                                    <button id="myBtn1" class="btn mt-2">Job Function<i class="fa fa-bars"></i> </button><br>
+                                    <hr>
+                                    <br>
+                                    <h5>COMPANY<i style="font-size:24px" class="fa">&#xf059;</i></h5>
+                                    <button id="myBtn2" class="btn mt-2">Industry / SIC Code<i class="fa fa-bars"></i> </button><br>
+                                    <button id="myBtn2" class="btn mt-2">Company Search<i class="fa fa-bars"></i> </button><br>
+                                    <h6>Employee Range<span>0 - 1B</span></h6>
+                                    <div class="custom_input">
+                                        <div class="input_field">
+                                            <input type="text" id="username" name="username" placeholder="Minimum"><br>
+                                        </div>
+                                        <div class="input_field">
+                                            <input type="text" id="username" name="username" placeholder="Maximum"><br>
+                                        </div>
+                                        <button id="myBtn2" class="btn mt-2">Update</button><br>
+                                    </div>
+                                    <h6>Revenue Range<span>0 - 1T</span></h6>
+                                    <div class="custom_input">
+                                        <div class="input_field">
+                                            <input type="text" id="username" name="username" placeholder="Minimum"><br>
+                                        </div>
+                                        <div class="input_field">
+                                            <input type="text" id="username" name="username" placeholder="Maximum"><br>
+                                        </div>
+                                        <button id="myBtn2" class="btn mt-2">Update</button><br>
+                                    </div>
+                                    <div class="hide_show">
+                                        <div style='border: solid 1px #f1f1f1; padding: 10px; margin: 10px 0;'>
+                                            <input type="button" value="Show Advanced Filters" id="btndisplay" />
+                                            <p id="ptext">
+                                                <button id="myBtn2" class="btn mt-2">Target Specific Domains<i class="fa fa-bars"></i> </button><br>
+                                                <button id="myBtn2" class="btn mt-2">Domain Type<i class="fa fa-bars"></i> </button><br>
+                                                <button id="myBtn2" class="btn mt-2">Company Type<i class="fa fa-bars"></i> </button><br>
+                                                <button id="myBtn2" class="btn mt-2">Company Founded<i class="fa fa-bars"></i> </button><br>
+                                            </p>
+                                            <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h5>LOCATION <i style="font-size:24px" class="fa">&#xf059;</i></h5>
+                                    <button id="myBtn2" class="btn mt-2">Country<i class="fa fa-bars"></i> </button><br>
+                                    <button id="myBtn2" class="btn mt-2">State<i class="fa fa-bars"></i> </button><br>
+                                    <button id="myBtn2" class="btn mt-2">Country<i class="fa fa-bars"></i> </button><br>
+                                    <button id="myBtn2" class="btn mt-2">City<i class="fa fa-bars"></i> </button><br>
+                                    <h6>Revenue Range<span>0 - 1T</span></h6>
+                                    <div class="custom_input second_inputs">
+                                        <div class="input_field">
+                                            <input type="text" id="username" name="username" placeholder="Area Code"><br>
+                                        </div>
+                                        <div class="input_field mt-2 mb-2">
+                                            <input type="text" id="username" name="username" placeholder="Zip Code"><br>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- popup -->
+                                    <div id="myModal" class="modal">
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <div class="model_left">
+                                                    <h2>SELECT JOB LEVELS</h2>
+                                                    <p>You can select one or more job levels.</p>
+                                                </div>
+                                                <div class="model_right">
+                                                    <h2>SELECTED JOB LEVELS</h2>
+                                                    <p>Job Levels that you've chosen. </p>
+                                                </div>
+                                                <span class="close">&times;</span>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="model_left">
+                                                    <form>
+                                                        <div class="form-group has-search">
+                                                            <span class="fa fa-search form-control-feedback"></span>
+                                                            <input type="text" class="form-control" placeholder="Type to search">
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                                                            <label class="custom-control-label" for="defaultUnchecked">C-Level</label><br>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
+                                                            <label class="custom-control-label" for="defaultUnchecked1">VP-Level</label><br>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
+                                                            <label class="custom-control-label" for="defaultUnchecked2">Director-Level</label><br>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
+                                                            <label class="custom-control-label" for="defaultUnchecked3">Manager-Level</label><br>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
+                                                            <label class="custom-control-label" for="defaultUnchecked4">Non-Manager</label><br>
+                                                        </div>
+                                                    </form>
+                                                    <div class="btn-group">
+                                                        <p>2 items selected</p>
+                                                        <button type="button" class="btn btn-primary include">&#10003;Include</button>
+                                                        <button type="button" class="btn btn-primary ml-3 exlude">&#10006;Exlude</button>
+                                                    </div>
+                                                </div>
+                                                <div class="model_right">
+                                                    <ul>
+                                                        <li><span>Include</span>C-Level<b>&#10006;</b></li>
+                                                        <li><span>Include</span>C-Level<b>&#10006;</b></li>
+                                                        <li><span>Include</span>C-Level<b>&#10006;</b></li>
+                                                        <li><span>Include</span>C-Level<b>&#10006;</b></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--
+                          <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                          </div>
+                        -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right_site">
+                                    <div class="col-md-12">
+                                        <div>
+                                            <div class="gap-bottom-medium">
+                                                <div class="row">
+                                                    <div class="col-md-1"><strong class="text-success">include</strong></div>
+                                                    <div class="col-md-11">
+                                                        <div class="tags" style="margin-bottom: 0px;"><span class="tag">Country: United States<button type="button" class="tag__remove">X</button></span><button type="button" class="button button--octonary button--xsmall tags__remove-all-btn">Clear All Filters</button></div>
+                                                    </div>
+                                                </div>
+                                            </div><span class="block gap-bottom-xsmall">Preview of 20 direct email contacts found as sample for your current search.</span>
+                                            <table class="table table--primary table--hover table--fixed table--pointer shadow-primary gap-bottom-xsmall mt-3">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Direct Email</th>
+                                                        <th>Contact Name</th>
+                                                        <th>Company &amp; Job Level</th>
+                                                        <th>Job Function &amp; Job Department</th>
+                                                        <th>Country &amp; City</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="modelbtn">
+                                                        <td>***ns@***om</td>
+                                                        <td><span class="text-semibold font-medium">***rt ***ns</span></td>
+                                                        <td><span>Edward Jones / Manager-Level</span></td>
+                                                        <td><span>Financing / Financing</span></td>
+                                                        <td><span>United States Huntleigh</span></td>
+                                                    </tr>
+                                                    <tr id="modelbtn">
+                                                        <td>***er@***om</td>
+                                                        <td><span class="text-semibold font-medium">***ry ***er</span></td>
+                                                        <td><span>Anro Inc. / Non-Manager</span></td>
+                                                        <td><span>HR / Administration</span></td>
+                                                        <td><span>United States West Chester</span></td>
+                                                    </tr>
+                                                    <tr id="modelbtn">
+                                                        <td>***er@***om</td>
+                                                        <td><span class="text-semibold font-medium">***ry ***er</span></td>
+                                                        <td><span>Anro Inc. / Non-Manager</span></td>
+                                                        <td><span>HR / Administration</span></td>
+                                                        <td><span>United States West Chester</span></td>
+                                                    </tr>
+                                                    <tr id="modelbtn">
+                                                        <td>***er@***om</td>
+                                                        <td><span class="text-semibold font-medium">***ry ***er</span></td>
+                                                        <td><span>Anro Inc. / Non-Manager</span></td>
+                                                        <td><span>HR / Administration</span></td>
+                                                        <td><span>United States West Chester</span></td>
+                                                    </tr>
+                                                    <tr id="modelbtn">
+                                                        <td>***er@***om</td>
+                                                        <td><span class="text-semibold font-medium">***ry ***er</span></td>
+                                                        <td><span>Anro Inc. / Non-Manager</span></td>
+                                                        <td><span>HR / Administration</span></td>
+                                                        <td><span>United States West Chester</span></td>
+                                                    </tr>
+                                                    <tr id="modelbtn">
+                                                        <td>***er@***om</td>
+                                                        <td><span class="text-semibold font-medium">***ry ***er</span></td>
+                                                        <td><span>Anro Inc. / Non-Manager</span></td>
+                                                        <td><span>HR / Administration</span></td>
+                                                        <td><span>United States West Chester</span></td>
+                                                    </tr>
+                                                    <tr id="modelbtn">
+                                                        <td>***er@***om</td>
+                                                        <td><span class="text-semibold font-medium">***ry ***er</span></td>
+                                                        <td><span>Anro Inc. / Non-Manager</span></td>
+                                                        <td><span>HR / Administration</span></td>
+                                                        <td><span>United States West Chester</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div id="myPopup" class="modalLayout">
+                                                <div class="modalLayout-content">
+                                                    <div class="modalLayout-header">
+                                                        <span class="closee">&times;</span>
+                                                        <h2>Sample of Direct Contact</h2>
+                                                        <p><b>***rl ***en</b></p>
+                                                        <p>United States, Boca Raton</p>
+                                                    </div>
+                                                    <div class="modalLayout-body">
+                                                        <div class="second_popup">
+                                                            <div><b>Direct Email Contact</b>
+                                                            </div>
+                                                            <div>***en@***om
+                                                            </div>
+                                                            <div><b>Phone Number</b>
+                                                            </div>
+                                                            <div>**********00
+                                                            </div>
+                                                        </div>
+                                                        <div class="second_popup1">
+                                                            <div><b>Contact Name</b>
+                                                            </div>
+                                                            <div>***rl ***en
+                                                            </div>
+                                                            <div><b>Company Name</b>
+                                                            </div>
+                                                            <div>OfficeMax
+                                                            </div>
+                                                            <div><b>Job Function</b>
+                                                            </div>
+                                                            <div>Business Development
+                                                            </div>
+                                                            <div><b>Job Department</b>
+                                                            </div>
+                                                            <div>Sales
+                                                            </div>
+                                                            <div><b>Job Level</b>
+                                                            </div>
+                                                            <div> Manager-Level / Manager
+                                                            </div>
+                                                            <div><b>SIC Code</b>
+                                                            </div>
+                                                            <div>5943
+                                                            </div>
+                                                            <div><b>Industry</b>
+                                                            </div>
+                                                            <div> Administration of public health programs
+                                                            </div>
+                                                            <div><b>BYD Industries</b>
+                                                            </div>
+                                                            <div>Research
+                                                            </div>
+                                                            <div><b>Employee</b>
+                                                            </div>
+                                                            <div> 11798
+                                                            </div>
+                                                            <div><b>Revenue</b>
+                                                            </div>
+                                                            <div>3750000000
+                                                            </div>
+                                                            <div><b>SIC Code</b>
+                                                            </div>
+                                                            <div>5943
+                                                            </div>
+                                                            <div><b>Industry</b>
+                                                            </div>
+                                                            <div> Administration of public health programs
+                                                            </div>
+                                                            <div><b>BYD Industries</b>
+                                                            </div>
+                                                            <div>Research
+                                                            </div>
+                                                            <div><b>Employee</b>
+                                                            </div>
+                                                            <div> 11798
+                                                            </div>
+                                                            <div><b>Revenue</b>
+                                                            </div>
+                                                            <div>3750000000
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="modalLayout-footer">
+                                                        <h3>Modal Footer</h3>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="chicken" role="tabpanel" aria-labelledby="chicken-tab"> The chicken (Gallus gallus domesticus) is a type of domesticated fowl, a subspecies of the red junglefowl. It is one of the most common and widespread domestic animals, with a total population of more than 19 billion as of 2011. There are more chickens in the world than any other bird or domesticated fowl. </div>
+                        <div class="tab-pane" id="kiwi" role="tabpanel" aria-labelledby="kiwi-tab"> Kiwi or kiwis are flightless birds native to New Zealand, in the genus Apteryx and family Apterygidae. Approximately the size of a domestic chicken, kiwi are by far the smallest living ratites (which also consist of ostriches, emus, rheas, and cassowaries), and lay the largest egg in relation to their body size of any species of bird in the world. </div>
+                        <div class="tab-pane" id="emu" role="tabpanel" aria-labelledby="emu-tab"> The emu (Dromaius novaehollandiae) is the second-largest living bird by height, after its ratite relative, the ostrich. It is endemic to Australia where it is the largest native bird and the only extant member of the genus Dromaius. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  tabs end-->
+    <div></div>
+    <div class="ready_to_bost">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                    <div class="ready_made_list">
+                        <h1>READY TO BOOST YOUR SALES LIKE YOUR COMPETITORS?
+                            TRY OUR TOOL FOR FREE. </h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="bulid_list_btn">
+                        <button type="button" class="btn">Build A List<span>&#8594;</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script language="javascript">
+    $(document).ready(function() {
+        $("#ptext").toggle("Hide");
+        $("#btndisplay").on("click", function() {
+            $("#ptext").toggle("slow");
+            if ($(this).val() == "Hide  Advanced Filters")
+                $(this).val("Show Advanced Filters");
+            else
+                $(this).val("Hide  Advanced Filters");
+        });
+    });
+    </script>
+    <script src="assets/popup.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
