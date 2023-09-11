@@ -1,0 +1,89 @@
+<?php
+
+namespace App\Models;
+
+use \DateTimeInterface;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Cviebrock\EloquentSluggable\Sluggable;
+
+class BlogPost extends Model implements HasMedia
+{
+    use SoftDeletes;
+    use InteractsWithMedia;
+    use HasFactory;
+    use Sluggable;
+
+    public $table = 'blog_posts';
+
+    protected $appends = [
+        'featured_image',
+    ];
+
+    protected $dates = [
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
+
+    protected $fillable = [
+        'title',
+        'page_text',
+        'excerpt',
+        'slug',
+        'meta_title',
+        'meta_description',
+        'meta_keywords',
+        'user_id',
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
+    }
+    public function registerMediaConversions(Media $media = null): void
+    {
+        $this->addMediaConversion('thumb')->fit('crop', 50, 50);
+        $this->addMediaConversion('preview')->fit('crop', 120, 120);
+    }
+
+    public function categories()
+    {
+        return $this->belongsToMany(BlogCategory::class);
+    }
+
+    public function tags()
+    {
+        return $this->belongsToMany(BlogTag::class);
+    }
+
+    public function getFeaturedImageAttribute()
+    {
+        $file = $this->getMedia('featured_image')->last();
+        if ($file) {
+            $file->url       = $file->getUrl();
+            $file->thumbnail = $file->getUrl('thumb');
+            $file->preview   = $file->getUrl('preview');
+        }
+
+        return $file;
+    }
+    public function post_by()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+    protected function serializeDate(DateTimeInterface $date)
+    {
+        return $date->format('Y-m-d H:i:s');
+    }
+}
