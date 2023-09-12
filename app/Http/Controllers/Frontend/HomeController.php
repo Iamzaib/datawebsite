@@ -10,4 +10,7 @@ class HomeController extends Controller
     {
         return view('frontend.pages.index');
     }
+    public function lists_by_cat(){
+        return "jobs level";
+    }
 }

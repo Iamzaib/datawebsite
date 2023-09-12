@@ -1,4 +1,5 @@
 <?php
+
 Route::get('/', 'Frontend\HomeController@index')->name('home');
 Route::get('/lists/{slug}', 'Frontend\HomeController@lists_by_cat')->name('lists_by_cat');
 Route::get('/page/{slug}', 'Frontend\HomeController@get_page')->name('pages');
